@@ -10,5 +10,6 @@
 - [Project Requirements](https://github.com/dav1dk1m/BlinkBoost/blob/main/PlanDesign/07%20-%20Project%20Requirements.pdf)
 
 ## Prototypes
+- [UML Diagram](https://github.com/dav1dk1m/BlinkBoost/blob/main/PlanDesign/BlinkBoost%20UML.png)
 - [Lo-Fi Prototype](https://github.com/dav1dk1m/BlinkBoost/blob/main/PlanDesign/Lo-Fi%20Prototype.pdf)
 - [Hi-Fi Prototype](https://github.com/dav1dk1m/BlinkBoost/blob/main/PlanDesign/Hi-Fi%20Prototype.pdf) & [Figma Prototype](https://www.figma.com/proto/MMa7t2L3EiCM5etiGtllM6/BlinkBoost-Hi-Fi?type=design&node-id=1-3&t=ji3XsCZGK1sgKTSM-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3&mode=design)

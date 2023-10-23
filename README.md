@@ -15,4 +15,7 @@ and supplementary aids.
 In the modern digital age, a significant number of individuals, including students and office workers, experience prolonged screen time. This extended exposure to screens has been linked to various eye problems, leading to an increased reliance on corrective eyewear. There's a growing need for solutions that can alleviate this strain and promote better eye health.
 
 
-The primary need is to offer a remedy to the increasing eye problems stemming from extended screen times. With an increasing number of people, especially the younger generation and working professionals, spending hours in front of screens, there's a significant market demand for solutions that not only offer relief but also educate on proactive eye care. Integrating a community forum further fosters a sense of community, promoting knowledge-sharing and holistic well-being. 
+The primary need is to offer a remedy to the increasing eye problems stemming from extended screen times. With an increasing number of people, especially the younger generation and working professionals, spending hours in front of screens, there's a significant market demand for solutions that not only offer relief but also educate on proactive eye care. Integrating a community forum further fosters a sense of community, promoting knowledge-sharing and holistic well-being.
+
+## VLOG
+[Vlog 1 - Plan and Design](https://youtu.be/2AJRWTFnqxM?feature=shared): Vlog 1 highlights the key knowledge from the initial planning documents.

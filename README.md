@@ -18,7 +18,4 @@ In the modern digital age, a significant number of individuals, including studen
 The primary need is to offer a remedy to the increasing eye problems stemming from extended screen times. With an increasing number of people, especially the younger generation and working professionals, spending hours in front of screens, there's a significant market demand for solutions that not only offer relief but also educate on proactive eye care. Integrating a community forum further fosters a sense of community, promoting knowledge-sharing and holistic well-being.
 
 ## VLOG
-[Vlog 1 - Plan and Design](https://youtu.be/2AJRWTFnqxM?feature=shared) {:target="_blank" rel="noopener"}: Vlog 1 highlights the key knowledge from the initial planning documents.
-<a href="placeholder.com" target="_blank">Opens in new tab</a>
-
-<a href="https://youtu.be/2AJRWTFnqxM?feature=shared" target="_blank">Vlog 1 - Plan and Design</a>: Vlog 1 highlights the key knowledge from the initial planning documents.
+[Vlog 1 - Plan and Design](https://youtu.be/2AJRWTFnqxM?feature=shared): Vlog 1 highlights the key knowledge from the initial planning documents.

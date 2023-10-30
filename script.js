@@ -24,9 +24,10 @@ let changeForm = (e) => {
 }
 
 let mainF = (e) => {
-    // Removed the line that adds an event listener for preventing default action on submit buttons
     for (var i = 0; i < switchBtn.length; i++)
         switchBtn[i].addEventListener("click", changeForm)
 }
 
 window.addEventListener("load", mainF);
+
+

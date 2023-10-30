@@ -5,7 +5,7 @@
     <title>Exercise Page</title>
     <link rel="stylesheet" href="./menuStyle.css">
 
-    <div class="container">
+    <div class="container-1">
         <div class="menu-toggle">
             <input type="checkbox" id="menu-check">
             <div class="menu-btn">
@@ -23,6 +23,14 @@
             </ul>
         </div>
     </div>
+    <div id="container">
+        <div class="blue-circle"></div>
+        <button id="startExercise">Start</button>
+        <button id="prevExercise">Previous</button>
+        <button id="nextExercise">Next</button>
+        <div id="timer"></div>
+    </div>
+    <script src="animation.js"></script>
 
 
 

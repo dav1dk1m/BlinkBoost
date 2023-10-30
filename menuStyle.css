@@ -13,18 +13,18 @@ body {
 }
 
 .container {
-    height: auto; /* change this */
-    width: 100%; /* change this */
-    padding-top: 0px; /* change this */
+    height: auto; 
+    width: 100%;
+    padding-top: 0px;
     background-color: var(--clr-container-bg);
     border: none;
     border-radius: 10px;
 }
 
 .menu-toggle {
-    position: fixed; /* Add this */
-    top: 10px; /* Add this */
-    right: 10px; /* Add this */
+    position: fixed; 
+    top: 10px; 
+    right: 10px; 
     cursor: pointer;
 }
   

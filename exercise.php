@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Exercise Page</title>
     <link rel="stylesheet" href="./menuStyle.css">
-
+    <link rel="stylesheet" href="./exercise.css">
+    </head>
     <div class="container-1">
         <div class="menu-toggle">
             <input type="checkbox" id="menu-check">
@@ -16,22 +17,21 @@
                 </label>
             </div>
             <ul class="menu">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="./main.php">HOME</a></li>
+              <li><a href="./exercise.php">EXERCISE</a></li>
+              <li><a href="#">FORUM</a></li>
             </ul>
         </div>
     </div>
     <div id="container">
         <div class="blue-circle"></div>
-        <button id="startExercise">Start</button>
-        <button id="prevExercise">Previous</button>
-        <button id="nextExercise">Next</button>
+        <div id="button-container">
+    <button id="startExercise">Start</button>
+    <button id="prevExercise">Previous</button>
+    <button id="nextExercise">Next</button>
+</div>
         <div id="timer"></div>
     </div>
     <script src="animation.js"></script>
-
-
 
 </html>

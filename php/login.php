@@ -31,14 +31,15 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         if ($password === $row['password']) { 
             $_SESSION['userID'] = $row['ID'];
             $_SESSION['username'] = $username;
-            header("Location: main.php");
+            header("Location: php/main.php");
+            exit();
         } else {
             echo "<script>alert('Invalid password. Try again.');</script>";
-            echo "<script>window.location.href='index.html';</script>";
+            echo "<script>window.location.href='../index.html';</script>";
         }
     } else {
         echo "<script>alert('Invalid username. Try again.');</script>";
-        echo "<script>window.location.href='index.html';</script>";
+        echo "<script>window.location.href='../index.html';</script>";
     }
 }
 

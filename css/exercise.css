@@ -82,7 +82,7 @@
 }
 
 #prevExercise:hover, #nextExercise:hover {
-    opacity: 0.7; /* Optional: Add hover effect */
+    opacity: 0.7; 
 }
 
 #timer {
@@ -90,13 +90,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 2em; /* Adjust the size as needed */
-    color: #000; /* Adjust the color as needed */
+    font-size: 2em; 
+    color: #000; 
 }
 
 #instructions {
     text-align: center;
     margin: 20px;
     font-size: 1.2em;
-    color: #333; /* Or any color that suits your design */
+    color: #333; 
 }

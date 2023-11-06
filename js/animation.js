@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const prevButton = document.getElementById('prevExercise');
     const nextButton = document.getElementById('nextExercise');
     const timerElement = document.getElementById('timer');
-    const instructionsElement = document.getElementById('instructions'); // Ensure this element is in your HTML
+    const instructionsElement = document.getElementById('instructions'); 
 
     // Initialize variables
     let currentExercise = 0;

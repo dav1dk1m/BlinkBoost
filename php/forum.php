@@ -97,10 +97,6 @@ $result = $conn->query($sql);
         </section>
     </div>
 
-    <footer>
-        <!-- Footer content -->
-    </footer>
-
 </body>
 </html>
 

@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+.site-logo {
+    text-align: center;
+    max-width: 300px;
+}
+
+.forum-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.user-posts, .post-creation, .forum-posts {
+    width: 48%;
+}
+
+.user-posts {
+    margin-right: 2%;
+}
+
+.post-creation {
+    margin-left: 2%;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #4cae4c;
+}
+
+.post {
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    margin-top: 0;
+}
+
+.post footer {
+    color: #777;
+    font-size: 0.8em;
+}
+
+@media (max-width: 768px) {
+    .forum-container {
+        flex-direction: column;
+    }
+
+    .user-posts, .post-creation, .forum-posts {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}

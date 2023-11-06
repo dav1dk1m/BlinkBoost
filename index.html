@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BlinkBoost</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main">
+        <div class="container a-container" id="a-container">
+          <form class="form" id="a-form" method="post" action="register.php">
+            <h2 class="form_title title">CREATE ACCOUNT</h2>
+            <input class="form__input" name="username" type="text" placeholder="Username" required>
+            <input class="form__input" name="email" type="email" placeholder="Email" required>
+            <input class="form__input" name="password" type="password" placeholder="Password" required>
+            <button class="form__button button submit">SIGN UP</button>
+          </form>
+        </div>
+
+        <div class="container b-container" id="b-container">
+          <div class="form-wrapper"> 
+            <form class="form" id="b-form" method="post" action="php/login.php">
+              <h2 class="form_title title">SIGN IN</h2>
+              <input class="form__input" name="username" type="text" placeholder="Username">
+              <input class="form__input" name="password" type="password" placeholder="Password">
+              <button class="form__button button submit">SIGN IN</button>
+            </form>
+            <form action="php/main.php" method="get">
+              <input type="hidden" name="guest" value="1">
+              <button type="submit" class="form__button button-small submit">JOIN AS GUEST</button>
+            </form>
+          </div>
+        </div>
+        
+        
+        <div class="switch" id="switch-cnt">
+          <div class="switch__circle"></div>
+          <div class="switch__circle switch__circle--t"></div>
+          <div class="switch__container" id="switch-c1">
+            <img src="images/BlinkBoost-logos_transparent.png" alt="BlinkBoost Logo" class="logo">
+            <p class="switch__description description">Let's Start Your Today's Eye Exercise </p>
+            <button class="switch__button button switch-btn">SIGN IN</button>
+          </div>
+          <div class="switch__container is-hidden" id="switch-c2">
+            <img src="images/BlinkBoost-logos_transparent.png" alt="BlinkBoost Logo" class="logo">
+            <p class="switch__description description">Join Us, We Are BlinkBoost</p>
+            <button class="switch__button button switch-btn">SIGN UP</button>
+          </div>
+        </div>
+      </div>
+	<script src="js/script.js"></script>
+  </body>
+</html>
+
+
+

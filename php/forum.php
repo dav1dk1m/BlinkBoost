@@ -33,9 +33,6 @@ $result = $conn->query($sql);
     <title>Forum</title>
     <link rel="stylesheet" href="../css/forumStyle.css">
     <link rel="stylesheet" href="../css/headerStyle.css">
-    <style>
-       
-    </style>
 </head>
 <body>
     <header>
@@ -63,12 +60,43 @@ $result = $conn->query($sql);
 
     <div class="forum-container">
         <aside class="user-posts">
+        <h2>Your Posts</h2>
+<div class="user-posts-list">
+    <?php
+    $userID = $_SESSION['userID'];
+
+    $userPostsSql = "SELECT ID, title, content, timestamp FROM Posting WHERE authorID = ? ORDER BY timestamp DESC";
+    $stmt = $conn->prepare($userPostsSql);
+    $stmt->bind_param("i", $userID);
+    $stmt->execute();
+    $userPostsResult = $stmt->get_result();
+
+    if ($userPostsResult->num_rows > 0) {
+        while($post = $userPostsResult->fetch_assoc()) {
+            echo "<div class='user-post'>";
+            echo "<h3>" . htmlspecialchars($post['title']) . "</h3>";
+
+            $content = htmlspecialchars($post['content']);
+            if (strlen($content) > 20) { 
+                $content = substr($content, 0, 20) . "... <a href='detailedPost.php?id=" . $post['ID'] . "'>Read More</a>";
+            }
+            echo "<p>" . nl2br($content) . "</p>";
+            echo "<span>Posted on: " . $post['timestamp'] . "</span>";
+            echo "</div>";
+        }
+    } else {
+        echo "<p>You haven't posted anything yet.</p>";
+    }
+
+    $stmt->close();
+    ?>
+</div>
 
         </aside>
 
         <section class="post-creation">
             <h2>Create a Post</h2>
-            <form action="posting.php" method="post">
+            <form action="post.php" method="post">
                 <input type="text" name="title" placeholder="Title" required>
                 <textarea name="content" placeholder="Content" required></textarea>
                 <input type="submit" value="Post">
@@ -79,14 +107,18 @@ $result = $conn->query($sql);
             <h2>Recent Posts</h2>
             <?php
             if ($result->num_rows > 0) {
-                // Output data of each row
-                while($row = $result->fetch_assoc()) {
-                    echo "<article class='post'>";
-                    echo "<h3>" . htmlspecialchars($row['title']) . "</h3>";
-                    echo "<p>" . nl2br(htmlspecialchars($row['content'])) . "</p>";
-                    echo "<footer>Posted by " . htmlspecialchars($row['username']) . " on " . $row['timestamp'] . "</footer>";
-                    echo "</article>";
-                }
+while($row = $result->fetch_assoc()) {
+    echo "<article class='post'>";
+    echo "<h3>" . htmlspecialchars($row['title']) . "</h3>";
+
+    $content = htmlspecialchars($row['content']);
+    if (strlen($content) > 10) { 
+        $content = substr($content, 0, 10) . "... <a href='detailedPost.php?id=" . $row['ID'] . "'>Read More</a>";
+    }
+    echo "<p>" . nl2br($content) . "</p>";
+    echo "<footer>Posted by " . htmlspecialchars($row['username']) . " on " . $row['timestamp'] . "</footer>";
+    echo "</article>";
+}
             } else {
                 echo "<p>No posts found.</p>";
             }

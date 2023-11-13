@@ -31,7 +31,8 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         if ($password === $row['password']) { 
             $_SESSION['userID'] = $row['ID'];
             $_SESSION['username'] = $username;
-            header("Location: php/main.php");
+            unset($_SESSION['is_guest']);
+            header("Location: main.php");
             exit();
         } else {
             echo "<script>alert('Invalid password. Try again.');</script>";

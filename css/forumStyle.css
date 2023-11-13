@@ -9,8 +9,10 @@ header {
 }
 
 .site-logo {
-    text-align: center;
-    max-width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
 }
 
 .forum-container {
@@ -37,7 +39,8 @@ h2 {
 
 form {
     background: #fff;
-    padding: 20px;
+    position:center;
+    padding: 5px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -80,6 +83,7 @@ input[type="submit"]:hover {
     color: #777;
     font-size: 0.8em;
 }
+
 
 @media (max-width: 768px) {
     .forum-container {

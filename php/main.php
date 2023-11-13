@@ -16,6 +16,7 @@ if (isset($_GET['guest']) && $_GET['guest'] == '1') {
 // Welcome message
 $welcomeMessage = isset($_SESSION['is_guest']) ? 'Welcome Guest' : 'Welcome ' . htmlspecialchars($_SESSION['username']);
 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">

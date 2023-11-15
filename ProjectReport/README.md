@@ -12,3 +12,5 @@ This folder contains the status updates for each sprint in the project. It serve
 
 ## Report
 - [October 31, 2023 Report - MVP 1](https://github.com/dav1dk1m/BlinkBoost/blob/main/ProjectReport/Project%20Status%20Report%20-%20MVP%201.pdf)
+- [November 14, 2023 Report - MVP 2](https://github.com/dav1dk1m/BlinkBoost/blob/main/ProjectReport/Project%20Status%20Report%20-%20MVP%202.pdf)
+

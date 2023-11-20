@@ -24,12 +24,14 @@ if ($conn->connect_error) {
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $title = $_POST['title'];
     $content = $_POST['content'];
-    $authorID = $_SESSION['userID']; 
+    $authorID = $_SESSION['userID'];
+    $category = $_POST['category'];
+ 
 
-    $sql = "INSERT INTO Posting (title, content, authorID) VALUES (?, ?, ?)";
+    $sql = "INSERT INTO Posting (title, content, authorID, category) VALUES (?, ?, ?, ?)";
     $stmt = $conn->prepare($sql);
 
-    $stmt->bind_param("ssi", $title, $content, $authorID);
+    $stmt->bind_param("ssis", $title, $content, $_SESSION['userID'], $category);
     $success = $stmt->execute();
 
     if ($success) {

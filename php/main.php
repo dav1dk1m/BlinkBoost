@@ -52,7 +52,11 @@ $welcomeMessage = isset($_SESSION['is_guest']) ? 'Welcome Guest' : 'Welcome ' . 
     </a> <?php if (!isset($_SESSION['is_guest'])): ?>
     <!-- Show forum link for non-guests -->
     <a href="forum.php">
-      <button class="button">To Forum Page</button>
-    </a> <?php endif; ?>
+      <button class="button">My Dashboard</button>
+    </a> 
+    <a href="discussion.php">
+      <button class="button">Discussion Board</button>
+    </a> 
+    <?php endif; ?>
   </body>
 </html>

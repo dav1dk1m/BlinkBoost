@@ -36,7 +36,8 @@ if(isset($_GET['guest']) && $_GET['guest'] == '1') {
             <ul class="menu">
               <li><a href="../php/main.php">HOME</a></li>
               <li><a href="../php/exercise.php">EXERCISE</a></li>
-              <li><a href="../php/forum.php">FORUM</a></li>
+              <li><a href="../php/forum.php">DASHBOARD</a></li>
+              <li><a href="../php/discussion.php">DISCUSSIONS</a></li>
             </ul>
         </div>
     </div>

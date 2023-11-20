@@ -125,3 +125,11 @@ body {
     z-index: 10; 
 }
 
+.all-posts-image {
+    position: absolute;
+    top: -44px; 
+    left: -44px; 
+    width: 200px; 
+    height: auto;
+    z-index: 10; 
+}

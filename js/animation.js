@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         closeEyes,
         moveInfinity
     ];
-
+    
     function updateInstructions(text) {
         instructionsElement.textContent = text;
     }
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateInstructions('Close your eyes gently for the duration of the timer.');
         stopExistingIntervals();
         blueCircle.style.display = 'none';
-        let timeLeft = 30;
+        let timeLeft = 20;
         timerElement.innerHTML = `${timeLeft} seconds`;
 
         interval = setInterval(() => {
@@ -150,6 +150,8 @@ document.addEventListener('DOMContentLoaded', function() {
         resetExercise();
         pauseCurrentExercise(); // Ensure the exercise is paused when switching
     });
+
+    
 
     startButton.addEventListener('click', toggleExercise);
 

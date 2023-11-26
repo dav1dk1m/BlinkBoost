@@ -29,13 +29,13 @@ $stmt->bind_param("sss", $username, $email, $password);
 if ($stmt->execute()) {
     echo "<script>
             alert('Account successfully created.');
-            window.location.href='index.html';
+            window.location.href='../index.html';
           </script>";
 } else {
     if (strpos($conn->error, 'Duplicate entry') !== false) {
         echo "<script>
                 alert('Username or Email already exists. Please choose a different one.');
-                window.location.href='index.html';
+                window.location.href='../index.html';
               </script>";
     } else {
         echo "Error: " . $conn->error;

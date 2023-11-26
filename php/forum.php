@@ -53,6 +53,7 @@
                <li><a href="../php/exercise.php">EXERCISE</a></li>
                <li><a href="../php/forum.php">DASHBOARD</a></li>
                <li><a href="../php/discussion.php">DISCUSSIONS</a></li>
+               <li><a href="logout.php" class="logout-button">LOGOUT</a></li>
             </ul>
          </div>
       </div>

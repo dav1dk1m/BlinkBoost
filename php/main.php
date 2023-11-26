@@ -41,22 +41,46 @@ $welcomeMessage = isset($_SESSION['is_guest']) ? 'Welcome Guest' : 'Welcome ' . 
         height: 50px;
         margin-top: 10px;
       }
+      .header {
+    width: 100%;
+    position: relative;
+    text-align: right;
+    padding: 10px;
+}
+
+.logout-button {
+    padding: 5px 15px;
+    background-color: #f44336;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
     </style>
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>
+    <div class="header">
+      <a href="logout.php" class="logout-button">Logout</a>
+    </div>
     <h1> <?php echo $welcomeMessage; ?> </h1>
     <img src="../images/BlinkBoost-logos_transparent.png" alt="BlinkBoost Logo" class="logo-main">
     <a href="../php/exercise.php">
       <button class="button">Start Exercise</button>
-    </a> <?php if (!isset($_SESSION['is_guest'])): ?>
+    </a>
     <!-- Show forum link for non-guests -->
-    <a href="forum.php">
-      <button class="button">My Dashboard</button>
-    </a> 
+    <?php if (!isset($_SESSION['is_guest'])): ?>
+      <a href="forum.php">
+        <button class="button">My Dashboard</button>
+      </a> 
+    <?php endif; ?>
+    <!-- Show discussion board link for all users -->
     <a href="discussion.php">
       <button class="button">Discussion Board</button>
-    </a> 
-    <?php endif; ?>
+    </a>
   </body>
 </html>

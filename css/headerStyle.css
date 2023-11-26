@@ -133,3 +133,15 @@ body {
     height: auto;
     z-index: 10; 
 }
+
+.logout-button {
+    color: #fff; 
+    background-color: #f44336; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f; 
+}

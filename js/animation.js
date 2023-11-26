@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const prevButton = document.getElementById('prevExercise');
     const nextButton = document.getElementById('nextExercise');
     const timerElement = document.getElementById('timer');
-    const instructionsElement = document.getElementById('instructions'); 
+    const instructionsElement = document.getElementById('instructions');
 
     // Initialize variables
     let currentExercise = 0;
     let interval;
-    let exerciseStarted = false; 
+    let exerciseStarted = false;
 
     // List of exercise functions
     const exercises = [
@@ -19,7 +19,25 @@ document.addEventListener('DOMContentLoaded', function() {
         closeEyes,
         moveInfinity
     ];
-    
+
+    const exerciseInfo = [{
+            title: "Vertical Eye Muscle Strengthening",
+            content: "Enhances vertical eye muscle strength and flexibility. Ideal for reducing eye strain from screen use."
+        },
+        {
+            title: "Horizontal Eye Muscle Training",
+            content: "Strengthens muscles for side-to-side eye movement. Improves peripheral vision and coordination, useful for driving and sports."
+        },
+        {
+            title: "Eye Relaxation for Health",
+            content: "Reduces eye strain and fatigue. Essential for preventing dry eyes in the digital age."
+        },
+        {
+            title: "Eye Coordination and Focus",
+            content: "Boosts eye coordination and focus through figure-eight tracking. Enhances reading skills and hand-eye coordination."
+        },
+    ];
+
     function updateInstructions(text) {
         instructionsElement.textContent = text;
     }
@@ -41,6 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
         clearExerciseDisplay();
         stopExistingIntervals();
         exercises[currentExercise](); // Start the new exercise
+        updateExerciseInfo(currentExercise); // Update exercise info content
     }
 
     // Move the blue circle up and down
@@ -53,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
         interval = setInterval(() => {
             blueCircle.style.transform = `translateY(${y}px)`;
             y += direction * 5;
-            
+
             // Reverse direction when reaching boundary
             if (y > 300 || y < -300) {
                 direction *= -1;
@@ -115,17 +134,17 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 30);
     }
 
-       // Function to start or resume the current exercise
-       function startCurrentExercise() {
+    // Function to start or resume the current exercise
+    function startCurrentExercise() {
         exercises[currentExercise]();
-        startButton.textContent = 'Pause'; 
+        startButton.textContent = 'Pause';
         exerciseStarted = true;
     }
 
     // Function to pause the current exercise
     function pauseCurrentExercise() {
         clearInterval(interval);
-        startButton.textContent = 'Start'; 
+        startButton.textContent = 'Start';
         exerciseStarted = false;
     }
 
@@ -136,6 +155,14 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             startCurrentExercise();
         }
+    }
+
+    function updateExerciseInfo(exerciseIndex) {
+        const infoTitle = document.querySelector('.btn-help .text-section h5');
+        const infoContent = document.querySelector('.btn-help .text-section p');
+
+        infoTitle.textContent = exerciseInfo[exerciseIndex].title;
+        infoContent.textContent = exerciseInfo[exerciseIndex].content;
     }
 
     // Event listeners for buttons
@@ -151,10 +178,11 @@ document.addEventListener('DOMContentLoaded', function() {
         pauseCurrentExercise(); // Ensure the exercise is paused when switching
     });
 
-    
+
 
     startButton.addEventListener('click', toggleExercise);
 
     // Initialize the display without starting the exercise
     clearExerciseDisplay();
+    updateExerciseInfo(0); // Initialize info for the first exercise
 });

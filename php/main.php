@@ -61,6 +61,7 @@ $welcomeMessage = isset($_SESSION['is_guest']) ? 'Welcome Guest' : 'Welcome ' . 
     background-color: #d32f2f;
 }
     </style>
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body>

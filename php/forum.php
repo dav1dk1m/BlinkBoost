@@ -30,6 +30,7 @@
    <head>
       <meta charset="UTF-8">
       <title>Dashboard</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
       <link rel="stylesheet" href="../css/forumStyle.css">
       <link rel="stylesheet" href="../css/headerStyle.css">
    </head>

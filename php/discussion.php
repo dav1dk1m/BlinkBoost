@@ -35,6 +35,7 @@
    <head>
       <meta charset="UTF-8">
       <title>All Discussions</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
       <link rel="stylesheet" href="../css/forumStyle.css">
       <link rel="stylesheet" href="../css/headerStyle.css">
       <link rel="stylesheet" href="../css/discussion.css">
@@ -84,7 +85,7 @@
             if ($postResult->num_rows > 0) {
                 while ($post = $postResult->fetch_assoc()) {
                     echo "<div class='post'>";
-                    echo "<h3>" . htmlspecialchars($post['title']) . "</h3>";
+                    echo "<h3><a href='detailedPost.php?id=" . $post['ID'] . "'>" . htmlspecialchars($post['title']) . "</a></h3>";
             
                     // Check if content is longer than 400 characters
                     $content = htmlspecialchars($post['content']);

@@ -13,6 +13,7 @@
    <head>
       <meta charset="UTF-8">
       <title>Exercise Page</title>
+      <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
       <link rel="stylesheet" href="../css/headerStyle.css">
       <link rel="stylesheet" href="../css/exercise.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">

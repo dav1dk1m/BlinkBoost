@@ -2,7 +2,7 @@
 Protect your eyes one exercise at a time—ideal for screen-users looking to boost eye health and learn from a community.
 
 ## Official Commercial
-[Click the Logo to Watch Our Commercial"]
+[Click the Logo to Watch Our Commercial]
 [![Commercial Video](https://github.com/teamcrusher/threewide/assets/36246244/22261391-a49e-43d7-b247-89f856d93c90)](https://youtu.be/AW5DRjlVlcE)
 
 ## [UN SDGs](https://sdgs.un.org/goals)

@@ -21,10 +21,16 @@ In the modern digital age, a significant number of individuals, including studen
 
 The primary need is to offer a remedy to the increasing eye problems stemming from extended screen times. With an increasing number of people, especially the younger generation and working professionals, spending hours in front of screens, there's a significant market demand for solutions that not only offer relief but also educate on proactive eye care. Integrating a community forum further fosters a sense of community, promoting knowledge-sharing and holistic well-being.
 
-Please check out the [PlanDesign](https://github.com/dav1dk1m/BlinkBoost/tree/main/PlanDesign) folder to look at more project planning and design documentation.
+Please check out the [PlanDesign folder](https://github.com/dav1dk1m/BlinkBoost/tree/main/PlanDesign) to look at more project planning and design documentation.
 
 ## Development
-I am currently working on web development in separate branches. Please check out the [webDev](https://github.com/dav1dk1m/BlinkBoost/tree/webDev) branch to see more of the code implementation.
+
+The development of BlinkBoost was carried out in separate branches to ensure a structured and efficient workflow. For a detailed view of the code implementation and development history, you can explore the following:
+
+- **Development Branch**: Visit the [webDev branch](https://github.com/dav1dk1m/BlinkBoost/tree/webDev) to see the various stages of web development and code changes.
+
+- **Current Version**: All development files have now been consolidated in the main branch for ease of access. Check out the [WebDevelopment folder](https://github.com/dav1dk1m/BlinkBoost/tree/main/WebDevelopment) in the main branch to view the latest version of the project files.
+
 
 ## VLOG
 [Vlog 1 - Plan and Design](https://youtu.be/2AJRWTFnqxM?feature=shared): Vlog 1 highlights the key knowledge from the initial planning documents.
